@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 8%;
+    background: #111827;
+}
+
+.logo {
+    color: #22c55e;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+nav a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #22c55e;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg,#0f172a,#1e293b);
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    color: #cbd5e1;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 12px 30px;
+    background: #22c55e;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #16a34a;
+    transform: scale(1.05);
+}
+
+/* HOME CARDS */
+.home-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 80px 8%;
+    flex-wrap: wrap;
+}
+
+.home-card {
+    background: #1e293b;
+    padding: 30px;
+    width: 280px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.home-card:hover {
+    transform: translateY(-10px);
+    background: #334155;
+}
+
+/* TEAMS PAGE */
+.teams-section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.league-buttons {
+    margin: 40px 0;
+}
+
+.league-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 25px;
+    background: #1e293b;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.league-btn.active,
+.league-btn:hover {
+    background: #22c55e;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    background: #1e293b;
+    padding: 25px;
+    width: 220px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+    background: #334155;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111827;
+    margin-top: 50px;
+}
+
+
+.fixture-section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.fixture-list {
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.match-card {
+    background: #1e293b;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.match-card:hover {
+    background: #334155;
+    transform: translateY(-5px);
+}
+
+.match-teams {
+    font-weight: 600;
+}
+
+.match-date {
+    color: #22c55e;
+}
+
+/* ADVANCED HERO */
+.hero-advanced {
+    height: 90vh;
+    background: linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.8)),
+    url('https://images.unsplash.com/photo-1508098682722-e99c643e7f0b');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-overlay h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+/* LIVE SCORE */
+.live-score {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.score-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.score-card {
+    background: #1e293b;
+    padding: 20px 30px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.score-card:hover {
+    background: #334155;
+}
+
+/* STATS */
+.stats-section {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 80px 8%;
+    background: #111827;
+    text-align: center;
+}
+
+.stat h2 {
+    color: #22c55e;
+    font-size: 40px;
+}
+
+.news-section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.news-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.news-card {
+    background: #1e293b;
+    padding: 25px;
+    width: 280px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.news-card:hover {
+    transform: translateY(-10px);
+    background: #334155;
+}
+
+/* CTA */
+.cta-section {
+    padding: 80px 8%;
+    text-align: center;
+    background: linear-gradient(135deg,#1e293b,#0f172a);
+}
+
+.btn-main {
+    display: inline-block;
+    padding: 14px 35px;
+    background: #22c55e;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(34, 197, 94, 0.3);
+}
+
+.btn-main:hover {
+    background: #16a34a;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(34, 197, 94, 0.5);
+}
+
+.btn-main:active {
+    transform: scale(0.96);
+}

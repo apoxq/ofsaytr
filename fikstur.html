@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fikstür | OfsaytTR</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="logo">⚽ OfsaytTR</div>
+    <nav>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="takimlar.html">Takımlar</a>
+        <a href="fikstur.html">Fikstür</a>
+    </nav>
+</header>
+
+<section class="fixture-section">
+    <h1>📅 Maç Fikstürü</h1>
+
+    <div class="league-buttons">
+        <button class="league-btn active" onclick="showMatches('superlig')">Süper Lig</button>
+        <button class="league-btn" onclick="showMatches('laliga')">La Liga</button>
+        <button class="league-btn" onclick="showMatches('premier')">Premier League</button>
+    </div>
+
+    <div class="fixture-list" id="fixtureList"></div>
+</section>
+
+<footer>
+    <p>© 2026 OfsaytTR</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
